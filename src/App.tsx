@@ -46,14 +46,13 @@ function App() {
                   />
                   <OrderTotals
                     order={state.order}
-                    tip={tip}
+                    tip={state.tip}
                     placeOrder={placeOrder}
                   />
               </>
             ) : (
               <p className="text-center">La orden esta vacia</p>
             )}
- 
 
           </div>
         </main>
