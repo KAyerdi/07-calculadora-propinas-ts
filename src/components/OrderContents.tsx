@@ -1,7 +1,7 @@
+import { Dispatch } from "react"
 import { formatCurrency } from "../helpers"
 import { OrderActions } from "../reducers/order-reducer"
-import { MenuItem, OrderItem } from "../types"
-import { Dispatch } from "react"
+import { OrderItem } from "../types"
 
 type OrderContentsProps = {
     order: OrderItem[],
@@ -15,7 +15,7 @@ export default function OrderContents({order, dispatch} : OrderContentsProps) {
 
         <div className="space-y-3 mt-10">
             {order.map( item => (
-                <div 
+                <div
                     key={item.id}
                     className="flex justify-between items-center border-t border-gray-200 py-5 last-of-type:border-b"
                 >
