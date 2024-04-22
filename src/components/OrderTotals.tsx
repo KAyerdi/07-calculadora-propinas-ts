@@ -1,7 +1,6 @@
-import { useCallback } from "react"
 import { OrderItem } from "../types"
 import { formatCurrency } from "../helpers"
-import { Dispatch } from "react"
+import { Dispatch, useCallback } from "react"
 import { OrderActions } from "../reducers/order-reducer"
 
 type OrderTotalsProps = {
